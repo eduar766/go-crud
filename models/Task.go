@@ -3,7 +3,7 @@ package models
 import "gorm.io/gorm"
 
 type Tasks struct {
-	gorm.Model
+	gorm.Model //Aca le indicamos a gorm que mantenga las migraciones
 
 	Title 		string `gorm:"type:varchar(100);not null; unique_index"`
 	Description string
